@@ -1,0 +1,599 @@
+[33mWARNING[0m:  [20-02-2025 10:25:31] chroma_server_nofile is set to 65535, but this is less than current soft limit of 1048575. chroma_server_nofile will not be set.
+[33mWARNING[0m:  [20-02-2025 10:26:15] chroma_server_nofile is set to 65535, but this is less than current soft limit of 1048575. chroma_server_nofile will not be set.
+[32mINFO[0m:     [20-02-2025 10:26:16] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [20-02-2025 10:26:16] Starting component System
+[36mDEBUG[0m:    [20-02-2025 10:26:16] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [20-02-2025 10:26:16] Starting component SqliteDB
+[36mDEBUG[0m:    [20-02-2025 10:26:16] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [20-02-2025 10:26:16] Starting component Posthog
+[36mDEBUG[0m:    [20-02-2025 10:26:16] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [20-02-2025 10:26:16] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [20-02-2025 10:26:16] Starting component LocalExecutor
+[36mDEBUG[0m:    [20-02-2025 10:26:16] Starting component SegmentAPI
+[36mDEBUG[0m:    [20-02-2025 10:26:16] Starting component SimpleAsyncRateLimitEnforcer
+[32mINFO[0m:     [20-02-2025 10:26:16] Started server process [[36m19862[0m]
+[32mINFO[0m:     [20-02-2025 10:26:16] Waiting for application startup.
+[32mINFO[0m:     [20-02-2025 10:26:16] Application startup complete.
+[32mINFO[0m:     [20-02-2025 10:26:16] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [20-02-2025 10:26:33] ::1:58094 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:26:33] ::1:58095 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:26:33] ::1:58095 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:26:34] ::1:58094 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:28:41] ::1:59007 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:28:41] ::1:59008 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:28:41] ::1:59008 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 10:28:42] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 10:28:42] ::1:59007 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:30:46] ::1:59888 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:30:46] ::1:59889 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:30:46] ::1:59889 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 10:30:47] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 10:30:47] ::1:59888 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:33:55] ::1:61320 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:33:55] ::1:61321 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:33:55] ::1:61321 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 10:33:56] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 10:33:56] ::1:61320 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:34:54] ::1:61731 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:34:54] ::1:61732 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:34:54] ::1:61732 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 10:34:55] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 10:34:55] ::1:61731 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:36:18] ::1:62302 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:36:18] ::1:62304 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:36:18] ::1:62304 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 10:36:21] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 10:36:21] ::1:62302 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:36:42] ::1:62486 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:36:42] ::1:62487 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:36:42] ::1:62487 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 10:36:43] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 10:36:43] ::1:62486 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:37:42] ::1:62918 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:37:42] ::1:62919 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:37:42] ::1:62919 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 10:37:43] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 10:37:43] ::1:62918 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:38:14] ::1:63097 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:38:14] ::1:63098 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:38:14] ::1:63098 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 10:38:16] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 10:38:16] ::1:63097 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:39:31] ::1:63738 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:39:31] ::1:63739 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:39:31] ::1:63739 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 10:39:32] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 10:39:32] ::1:63738 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:41:25] ::1:64608 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:41:25] ::1:64609 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:41:25] ::1:64609 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 10:41:26] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 10:41:26] ::1:64608 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:44:04] ::1:49395 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:44:04] ::1:49397 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:44:04] ::1:49397 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 10:44:05] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 10:44:05] ::1:49395 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:44:19] ::1:49497 - "GET /api/v2/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 10:44:19] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [20-02-2025 10:44:19] ::1:49497 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/add HTTP/1.1" 201
+[32mINFO[0m:     [20-02-2025 10:44:20] ::1:49497 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:47:56] ::1:50995 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:47:56] ::1:50996 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:47:56] ::1:50996 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 10:47:57] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 10:47:57] ::1:50995 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:48:11] ::1:51101 - "GET /api/v2/pre-flight-checks HTTP/1.1" 200
+[33mWARNING[0m:  [20-02-2025 10:48:11] Add of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 10:48:11] Add of existing embedding ID: 1
+[33mWARNING[0m:  [20-02-2025 10:48:11] Add of existing embedding ID: 2
+[33mWARNING[0m:  [20-02-2025 10:48:11] Add of existing embedding ID: 3
+[33mWARNING[0m:  [20-02-2025 10:48:11] Add of existing embedding ID: 4
+[33mWARNING[0m:  [20-02-2025 10:48:11] Add of existing embedding ID: 7
+[33mWARNING[0m:  [20-02-2025 10:48:11] Add of existing embedding ID: 8
+[33mWARNING[0m:  [20-02-2025 10:48:11] Add of existing embedding ID: 9
+[33mWARNING[0m:  [20-02-2025 10:48:11] Add of existing embedding ID: 10
+[33mWARNING[0m:  [20-02-2025 10:48:11] Add of existing embedding ID: 11
+[33mWARNING[0m:  [20-02-2025 10:48:11] Add of existing embedding ID: 12
+[33mWARNING[0m:  [20-02-2025 10:48:11] Add of existing embedding ID: 13
+[33mWARNING[0m:  [20-02-2025 10:48:11] Add of existing embedding ID: 14
+[33mWARNING[0m:  [20-02-2025 10:48:11] Insert of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 10:48:11] Insert of existing embedding ID: 1
+[33mWARNING[0m:  [20-02-2025 10:48:11] Insert of existing embedding ID: 2
+[33mWARNING[0m:  [20-02-2025 10:48:11] Insert of existing embedding ID: 3
+[33mWARNING[0m:  [20-02-2025 10:48:11] Insert of existing embedding ID: 4
+[33mWARNING[0m:  [20-02-2025 10:48:11] Insert of existing embedding ID: 7
+[33mWARNING[0m:  [20-02-2025 10:48:11] Insert of existing embedding ID: 8
+[33mWARNING[0m:  [20-02-2025 10:48:11] Insert of existing embedding ID: 9
+[33mWARNING[0m:  [20-02-2025 10:48:11] Insert of existing embedding ID: 10
+[33mWARNING[0m:  [20-02-2025 10:48:11] Insert of existing embedding ID: 11
+[33mWARNING[0m:  [20-02-2025 10:48:11] Insert of existing embedding ID: 12
+[33mWARNING[0m:  [20-02-2025 10:48:11] Insert of existing embedding ID: 13
+[33mWARNING[0m:  [20-02-2025 10:48:11] Insert of existing embedding ID: 14
+[32mINFO[0m:     [20-02-2025 10:48:11] ::1:51101 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/add HTTP/1.1" 201
+[32mINFO[0m:     [20-02-2025 10:48:12] ::1:51101 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:48:55] ::1:51394 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:48:55] ::1:51395 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:48:55] ::1:51395 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:51:00] ::1:52269 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:51:00] ::1:52271 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:51:00] ::1:52271 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 10:51:01] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 10:51:01] ::1:52269 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:51:15] ::1:52369 - "GET /api/v2/pre-flight-checks HTTP/1.1" 200
+[33mWARNING[0m:  [20-02-2025 10:51:15] Add of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 10:51:15] Add of existing embedding ID: 1
+[33mWARNING[0m:  [20-02-2025 10:51:15] Add of existing embedding ID: 2
+[33mWARNING[0m:  [20-02-2025 10:51:15] Add of existing embedding ID: 3
+[33mWARNING[0m:  [20-02-2025 10:51:15] Add of existing embedding ID: 4
+[33mWARNING[0m:  [20-02-2025 10:51:15] Add of existing embedding ID: 7
+[33mWARNING[0m:  [20-02-2025 10:51:15] Add of existing embedding ID: 8
+[33mWARNING[0m:  [20-02-2025 10:51:15] Add of existing embedding ID: 9
+[33mWARNING[0m:  [20-02-2025 10:51:15] Add of existing embedding ID: 10
+[33mWARNING[0m:  [20-02-2025 10:51:15] Add of existing embedding ID: 11
+[33mWARNING[0m:  [20-02-2025 10:51:15] Add of existing embedding ID: 12
+[33mWARNING[0m:  [20-02-2025 10:51:15] Add of existing embedding ID: 13
+[33mWARNING[0m:  [20-02-2025 10:51:15] Add of existing embedding ID: 14
+[33mWARNING[0m:  [20-02-2025 10:51:15] Insert of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 10:51:15] Insert of existing embedding ID: 1
+[33mWARNING[0m:  [20-02-2025 10:51:15] Insert of existing embedding ID: 2
+[33mWARNING[0m:  [20-02-2025 10:51:15] Insert of existing embedding ID: 3
+[33mWARNING[0m:  [20-02-2025 10:51:15] Insert of existing embedding ID: 4
+[33mWARNING[0m:  [20-02-2025 10:51:15] Insert of existing embedding ID: 7
+[33mWARNING[0m:  [20-02-2025 10:51:15] Insert of existing embedding ID: 8
+[33mWARNING[0m:  [20-02-2025 10:51:15] Insert of existing embedding ID: 9
+[33mWARNING[0m:  [20-02-2025 10:51:15] Insert of existing embedding ID: 10
+[33mWARNING[0m:  [20-02-2025 10:51:15] Insert of existing embedding ID: 11
+[33mWARNING[0m:  [20-02-2025 10:51:15] Insert of existing embedding ID: 12
+[33mWARNING[0m:  [20-02-2025 10:51:15] Insert of existing embedding ID: 13
+[33mWARNING[0m:  [20-02-2025 10:51:15] Insert of existing embedding ID: 14
+[32mINFO[0m:     [20-02-2025 10:51:15] ::1:52369 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/add HTTP/1.1" 201
+[32mINFO[0m:     [20-02-2025 10:51:16] ::1:52369 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:51:50] ::1:52611 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:51:50] ::1:52612 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:51:50] ::1:52612 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:53:53] ::1:53464 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:53:53] ::1:53465 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:53:53] ::1:53465 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 10:53:54] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 10:53:54] ::1:53464 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:54:08] ::1:53557 - "GET /api/v2/pre-flight-checks HTTP/1.1" 200
+[33mWARNING[0m:  [20-02-2025 10:54:08] Add of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 10:54:08] Add of existing embedding ID: 1
+[33mWARNING[0m:  [20-02-2025 10:54:08] Add of existing embedding ID: 2
+[33mWARNING[0m:  [20-02-2025 10:54:08] Add of existing embedding ID: 3
+[33mWARNING[0m:  [20-02-2025 10:54:08] Add of existing embedding ID: 4
+[33mWARNING[0m:  [20-02-2025 10:54:08] Add of existing embedding ID: 7
+[33mWARNING[0m:  [20-02-2025 10:54:08] Add of existing embedding ID: 8
+[33mWARNING[0m:  [20-02-2025 10:54:08] Add of existing embedding ID: 9
+[33mWARNING[0m:  [20-02-2025 10:54:08] Add of existing embedding ID: 10
+[33mWARNING[0m:  [20-02-2025 10:54:08] Add of existing embedding ID: 11
+[33mWARNING[0m:  [20-02-2025 10:54:08] Add of existing embedding ID: 12
+[33mWARNING[0m:  [20-02-2025 10:54:08] Add of existing embedding ID: 13
+[33mWARNING[0m:  [20-02-2025 10:54:08] Add of existing embedding ID: 14
+[33mWARNING[0m:  [20-02-2025 10:54:08] Insert of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 10:54:08] Insert of existing embedding ID: 1
+[33mWARNING[0m:  [20-02-2025 10:54:08] Insert of existing embedding ID: 2
+[33mWARNING[0m:  [20-02-2025 10:54:08] Insert of existing embedding ID: 3
+[33mWARNING[0m:  [20-02-2025 10:54:08] Insert of existing embedding ID: 4
+[33mWARNING[0m:  [20-02-2025 10:54:08] Insert of existing embedding ID: 7
+[33mWARNING[0m:  [20-02-2025 10:54:08] Insert of existing embedding ID: 8
+[33mWARNING[0m:  [20-02-2025 10:54:08] Insert of existing embedding ID: 9
+[33mWARNING[0m:  [20-02-2025 10:54:08] Insert of existing embedding ID: 10
+[33mWARNING[0m:  [20-02-2025 10:54:08] Insert of existing embedding ID: 11
+[33mWARNING[0m:  [20-02-2025 10:54:08] Insert of existing embedding ID: 12
+[33mWARNING[0m:  [20-02-2025 10:54:08] Insert of existing embedding ID: 13
+[33mWARNING[0m:  [20-02-2025 10:54:08] Insert of existing embedding ID: 14
+[32mINFO[0m:     [20-02-2025 10:54:08] ::1:53557 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/add HTTP/1.1" 201
+[32mINFO[0m:     [20-02-2025 10:54:09] ::1:53557 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:54:34] ::1:53757 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:54:34] ::1:53758 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:54:34] ::1:53758 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:57:51] ::1:55092 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:57:51] ::1:55093 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:57:51] ::1:55093 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 10:57:52] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 10:57:52] ::1:55092 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:58:06] ::1:55210 - "GET /api/v2/pre-flight-checks HTTP/1.1" 200
+[33mWARNING[0m:  [20-02-2025 10:58:06] Add of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 10:58:06] Add of existing embedding ID: 1
+[33mWARNING[0m:  [20-02-2025 10:58:06] Add of existing embedding ID: 2
+[33mWARNING[0m:  [20-02-2025 10:58:06] Add of existing embedding ID: 3
+[33mWARNING[0m:  [20-02-2025 10:58:06] Add of existing embedding ID: 4
+[33mWARNING[0m:  [20-02-2025 10:58:06] Add of existing embedding ID: 7
+[33mWARNING[0m:  [20-02-2025 10:58:06] Add of existing embedding ID: 8
+[33mWARNING[0m:  [20-02-2025 10:58:06] Add of existing embedding ID: 9
+[33mWARNING[0m:  [20-02-2025 10:58:06] Add of existing embedding ID: 10
+[33mWARNING[0m:  [20-02-2025 10:58:06] Add of existing embedding ID: 11
+[33mWARNING[0m:  [20-02-2025 10:58:06] Add of existing embedding ID: 12
+[33mWARNING[0m:  [20-02-2025 10:58:06] Add of existing embedding ID: 13
+[33mWARNING[0m:  [20-02-2025 10:58:06] Add of existing embedding ID: 14
+[33mWARNING[0m:  [20-02-2025 10:58:06] Insert of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 10:58:06] Insert of existing embedding ID: 1
+[33mWARNING[0m:  [20-02-2025 10:58:06] Insert of existing embedding ID: 2
+[33mWARNING[0m:  [20-02-2025 10:58:06] Insert of existing embedding ID: 3
+[33mWARNING[0m:  [20-02-2025 10:58:06] Insert of existing embedding ID: 4
+[33mWARNING[0m:  [20-02-2025 10:58:06] Insert of existing embedding ID: 7
+[33mWARNING[0m:  [20-02-2025 10:58:06] Insert of existing embedding ID: 8
+[33mWARNING[0m:  [20-02-2025 10:58:06] Insert of existing embedding ID: 9
+[33mWARNING[0m:  [20-02-2025 10:58:06] Insert of existing embedding ID: 10
+[33mWARNING[0m:  [20-02-2025 10:58:06] Insert of existing embedding ID: 11
+[33mWARNING[0m:  [20-02-2025 10:58:06] Insert of existing embedding ID: 12
+[33mWARNING[0m:  [20-02-2025 10:58:06] Insert of existing embedding ID: 13
+[33mWARNING[0m:  [20-02-2025 10:58:06] Insert of existing embedding ID: 14
+[32mINFO[0m:     [20-02-2025 10:58:06] ::1:55210 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/add HTTP/1.1" 201
+[32mINFO[0m:     [20-02-2025 10:58:07] ::1:55210 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:58:32] ::1:55410 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:58:32] ::1:55412 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 10:58:32] ::1:55412 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:00:45] ::1:56725 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:00:45] ::1:56726 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:00:45] ::1:56726 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 11:00:46] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 11:00:46] ::1:56725 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:01:01] ::1:56929 - "GET /api/v2/pre-flight-checks HTTP/1.1" 200
+[33mWARNING[0m:  [20-02-2025 11:01:01] Add of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 11:01:01] Add of existing embedding ID: 1
+[33mWARNING[0m:  [20-02-2025 11:01:01] Add of existing embedding ID: 2
+[33mWARNING[0m:  [20-02-2025 11:01:01] Add of existing embedding ID: 3
+[33mWARNING[0m:  [20-02-2025 11:01:01] Add of existing embedding ID: 4
+[33mWARNING[0m:  [20-02-2025 11:01:01] Add of existing embedding ID: 7
+[33mWARNING[0m:  [20-02-2025 11:01:01] Add of existing embedding ID: 8
+[33mWARNING[0m:  [20-02-2025 11:01:01] Add of existing embedding ID: 9
+[33mWARNING[0m:  [20-02-2025 11:01:01] Add of existing embedding ID: 10
+[33mWARNING[0m:  [20-02-2025 11:01:01] Add of existing embedding ID: 11
+[33mWARNING[0m:  [20-02-2025 11:01:01] Add of existing embedding ID: 12
+[33mWARNING[0m:  [20-02-2025 11:01:01] Add of existing embedding ID: 13
+[33mWARNING[0m:  [20-02-2025 11:01:01] Add of existing embedding ID: 14
+[33mWARNING[0m:  [20-02-2025 11:01:01] Insert of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 11:01:01] Insert of existing embedding ID: 1
+[33mWARNING[0m:  [20-02-2025 11:01:01] Insert of existing embedding ID: 2
+[33mWARNING[0m:  [20-02-2025 11:01:01] Insert of existing embedding ID: 3
+[33mWARNING[0m:  [20-02-2025 11:01:01] Insert of existing embedding ID: 4
+[33mWARNING[0m:  [20-02-2025 11:01:01] Insert of existing embedding ID: 7
+[33mWARNING[0m:  [20-02-2025 11:01:01] Insert of existing embedding ID: 8
+[33mWARNING[0m:  [20-02-2025 11:01:01] Insert of existing embedding ID: 9
+[33mWARNING[0m:  [20-02-2025 11:01:01] Insert of existing embedding ID: 10
+[33mWARNING[0m:  [20-02-2025 11:01:01] Insert of existing embedding ID: 11
+[33mWARNING[0m:  [20-02-2025 11:01:01] Insert of existing embedding ID: 12
+[33mWARNING[0m:  [20-02-2025 11:01:01] Insert of existing embedding ID: 13
+[33mWARNING[0m:  [20-02-2025 11:01:01] Insert of existing embedding ID: 14
+[32mINFO[0m:     [20-02-2025 11:01:01] ::1:56929 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/add HTTP/1.1" 201
+[32mINFO[0m:     [20-02-2025 11:01:02] ::1:56929 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:01:43] ::1:57412 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:01:43] ::1:57413 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:01:43] ::1:57413 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:06:40] ::1:60631 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:06:40] ::1:60632 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:06:40] ::1:60632 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 11:06:41] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 11:06:41] ::1:60631 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:06:43] ::1:60631 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:07:00] ::1:60844 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:07:00] ::1:60845 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:07:00] ::1:60845 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:08:18] ::1:61681 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:08:18] ::1:61682 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:08:18] ::1:61682 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 11:08:19] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 11:08:19] ::1:61681 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:08:20] ::1:61681 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:09:06] ::1:62186 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:09:06] ::1:62187 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:09:06] ::1:62187 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 11:09:57] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 11:09:57] ::1:62726 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:10:02] ::1:62780 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:11:49] ::1:63912 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:11:49] ::1:63913 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:11:49] ::1:63913 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 11:11:50] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 11:11:50] ::1:63912 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:11:51] ::1:63912 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:12:30] ::1:64398 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:12:30] ::1:64399 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:12:30] ::1:64399 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 11:12:50] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 11:12:50] ::1:64601 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:12:53] ::1:64601 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:16:25] ::1:50588 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:16:26] ::1:50589 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:16:26] ::1:50589 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 11:16:26] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 11:16:26] ::1:50588 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:16:28] ::1:50588 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:16:57] ::1:50945 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:16:57] ::1:50946 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:16:57] ::1:50946 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 11:17:03] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 11:17:03] ::1:51005 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:17:07] ::1:51005 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:17:42] ::1:51420 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:20:02] ::1:53215 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:20:02] ::1:53220 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:20:02] ::1:53220 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 11:20:03] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 11:20:03] ::1:53215 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:20:04] ::1:53215 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:20:41] ::1:53709 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:20:41] ::1:53710 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:20:41] ::1:53710 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 11:20:45] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 11:20:45] ::1:53709 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:20:49] ::1:53709 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:21:03] ::1:53909 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:22:28] ::1:54840 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:22:28] ::1:54845 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:22:28] ::1:54845 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 11:22:29] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 11:22:29] ::1:54840 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:22:31] ::1:54840 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:23:12] ::1:55267 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:23:12] ::1:55268 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:23:12] ::1:55268 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 11:23:17] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 11:23:17] ::1:55267 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:23:19] ::1:55267 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:25:48] ::1:57002 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:25:48] ::1:57003 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:25:48] ::1:57003 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 11:25:49] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 11:25:49] ::1:57002 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:25:51] ::1:57002 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:26:21] ::1:57395 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:26:21] ::1:57396 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:26:21] ::1:57396 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 11:26:26] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 11:26:26] ::1:57395 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:26:30] ::1:57395 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:29:49] ::1:59657 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:29:50] ::1:59658 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:29:50] ::1:59658 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 11:29:51] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 11:29:51] ::1:59657 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:29:53] ::1:59657 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:30:21] ::1:60020 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:30:21] ::1:60021 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:30:21] ::1:60021 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 11:30:41] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 11:30:41] ::1:60227 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:30:44] ::1:60227 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:32:39] ::1:61461 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:32:39] ::1:61462 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:32:39] ::1:61462 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 11:32:40] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 11:32:40] ::1:61461 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:32:41] ::1:61461 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:33:20] ::1:61910 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:33:20] ::1:61911 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:33:20] ::1:61911 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 11:33:29] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 11:33:29] ::1:62024 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:33:33] ::1:62024 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:33:58] ::1:62312 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:37:02] ::1:64275 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:37:02] ::1:64276 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:37:02] ::1:64276 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:38:41] ::1:65402 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:38:41] ::1:65403 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:38:41] ::1:65403 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:39:39] ::1:49623 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:39:39] ::1:49624 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:39:39] ::1:49624 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:42:02] ::1:51161 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:42:02] ::1:51162 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:42:02] ::1:51162 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 11:42:03] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 11:42:03] ::1:51161 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:42:04] ::1:51161 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:42:56] ::1:51767 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:42:56] ::1:51768 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:42:56] ::1:51768 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 11:43:05] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 11:43:05] ::1:51858 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:43:08] ::1:51858 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:43:20] ::1:52035 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:45:45] ::1:53535 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:45:45] ::1:53536 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:45:45] ::1:53536 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 11:45:46] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 11:45:46] ::1:53535 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:45:48] ::1:53535 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:46:30] ::1:54024 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:46:31] ::1:54025 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:46:31] ::1:54025 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:48:45] ::1:55407 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:48:45] ::1:55408 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:48:45] ::1:55408 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:48:46] ::1:55410 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:48:46] ::1:55411 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:48:46] ::1:55411 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 11:49:01] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 11:49:01] ::1:55553 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:49:30] ::1:55911 - "GET /api/v2/pre-flight-checks HTTP/1.1" 200
+[33mWARNING[0m:  [20-02-2025 11:49:30] Add of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 11:49:30] Add of existing embedding ID: 1
+[33mWARNING[0m:  [20-02-2025 11:49:30] Add of existing embedding ID: 2
+[33mWARNING[0m:  [20-02-2025 11:49:30] Add of existing embedding ID: 3
+[33mWARNING[0m:  [20-02-2025 11:49:30] Add of existing embedding ID: 4
+[33mWARNING[0m:  [20-02-2025 11:49:30] Add of existing embedding ID: 7
+[33mWARNING[0m:  [20-02-2025 11:49:30] Add of existing embedding ID: 8
+[33mWARNING[0m:  [20-02-2025 11:49:30] Add of existing embedding ID: 9
+[33mWARNING[0m:  [20-02-2025 11:49:30] Add of existing embedding ID: 10
+[33mWARNING[0m:  [20-02-2025 11:49:30] Add of existing embedding ID: 11
+[33mWARNING[0m:  [20-02-2025 11:49:30] Add of existing embedding ID: 12
+[33mWARNING[0m:  [20-02-2025 11:49:30] Add of existing embedding ID: 13
+[33mWARNING[0m:  [20-02-2025 11:49:30] Add of existing embedding ID: 14
+[33mWARNING[0m:  [20-02-2025 11:49:30] Insert of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 11:49:30] Insert of existing embedding ID: 1
+[33mWARNING[0m:  [20-02-2025 11:49:30] Insert of existing embedding ID: 2
+[33mWARNING[0m:  [20-02-2025 11:49:30] Insert of existing embedding ID: 3
+[33mWARNING[0m:  [20-02-2025 11:49:30] Insert of existing embedding ID: 4
+[33mWARNING[0m:  [20-02-2025 11:49:30] Insert of existing embedding ID: 7
+[33mWARNING[0m:  [20-02-2025 11:49:30] Insert of existing embedding ID: 8
+[33mWARNING[0m:  [20-02-2025 11:49:30] Insert of existing embedding ID: 9
+[33mWARNING[0m:  [20-02-2025 11:49:30] Insert of existing embedding ID: 10
+[33mWARNING[0m:  [20-02-2025 11:49:30] Insert of existing embedding ID: 11
+[33mWARNING[0m:  [20-02-2025 11:49:30] Insert of existing embedding ID: 12
+[33mWARNING[0m:  [20-02-2025 11:49:30] Insert of existing embedding ID: 13
+[33mWARNING[0m:  [20-02-2025 11:49:30] Insert of existing embedding ID: 14
+[32mINFO[0m:     [20-02-2025 11:49:30] ::1:55911 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/add HTTP/1.1" 201
+[32mINFO[0m:     [20-02-2025 11:49:49] ::1:56109 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:50:28] ::1:56502 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:53:58] ::1:58692 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:54:07] ::1:58792 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:54:07] ::1:58793 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:54:07] ::1:58793 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:54:08] ::1:58795 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:54:08] ::1:58796 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:54:08] ::1:58796 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 11:54:46] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 11:54:46] ::1:59223 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:54:59] ::1:59340 - "GET /api/v2/pre-flight-checks HTTP/1.1" 200
+[33mWARNING[0m:  [20-02-2025 11:54:59] Add of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 11:54:59] Add of existing embedding ID: 1
+[33mWARNING[0m:  [20-02-2025 11:54:59] Insert of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 11:54:59] Insert of existing embedding ID: 1
+[32mINFO[0m:     [20-02-2025 11:54:59] ::1:59340 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/add HTTP/1.1" 201
+[32mINFO[0m:     [20-02-2025 11:55:16] ::1:59497 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:58:02] ::1:61191 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:58:02] ::1:61192 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:58:02] ::1:61192 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:58:02] ::1:61193 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:58:02] ::1:61194 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:58:02] ::1:61194 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 11:58:13] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 11:58:13] ::1:61289 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 11:58:15] ::1:61289 - "GET /api/v2/pre-flight-checks HTTP/1.1" 200
+[33mWARNING[0m:  [20-02-2025 11:58:15] Add of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 11:58:15] Add of existing embedding ID: 1
+[33mWARNING[0m:  [20-02-2025 11:58:15] Insert of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 11:58:15] Insert of existing embedding ID: 1
+[32mINFO[0m:     [20-02-2025 11:58:15] ::1:61289 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/add HTTP/1.1" 201
+[32mINFO[0m:     [20-02-2025 11:58:36] ::1:61566 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:01:30] ::1:63491 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:01:30] ::1:63492 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:01:30] ::1:63492 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:01:31] ::1:63493 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:01:31] ::1:63494 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:01:31] ::1:63494 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 12:01:49] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 12:01:49] ::1:63683 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:01:51] ::1:63683 - "GET /api/v2/pre-flight-checks HTTP/1.1" 200
+[33mWARNING[0m:  [20-02-2025 12:01:51] Add of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 12:01:51] Insert of existing embedding ID: 0
+[32mINFO[0m:     [20-02-2025 12:01:51] ::1:63683 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/add HTTP/1.1" 201
+[32mINFO[0m:     [20-02-2025 12:02:01] ::1:63791 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:06:21] ::1:50225 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:06:21] ::1:50227 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:06:21] ::1:50227 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:06:21] ::1:50234 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:06:21] ::1:50235 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:06:21] ::1:50235 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 12:06:35] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 12:06:35] ::1:50377 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:06:36] ::1:50377 - "GET /api/v2/pre-flight-checks HTTP/1.1" 200
+[33mWARNING[0m:  [20-02-2025 12:06:36] Add of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 12:06:36] Insert of existing embedding ID: 0
+[32mINFO[0m:     [20-02-2025 12:06:36] ::1:50377 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/add HTTP/1.1" 201
+[32mINFO[0m:     [20-02-2025 12:06:39] ::1:50377 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:07:04] ::1:50667 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:07:45] ::1:51072 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:08:35] ::1:51601 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 12:08:53] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 12:08:53] ::1:51763 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[33mWARNING[0m:  [20-02-2025 12:08:54] Add of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 12:08:54] Insert of existing embedding ID: 0
+[32mINFO[0m:     [20-02-2025 12:08:54] ::1:51763 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/add HTTP/1.1" 201
+[32mINFO[0m:     [20-02-2025 12:09:05] ::1:51890 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:09:21] ::1:52089 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:12:25] ::1:53992 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:12:25] ::1:53993 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:12:25] ::1:53993 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:12:25] ::1:53998 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:12:25] ::1:53999 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:12:25] ::1:53999 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 12:12:42] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 12:12:42] ::1:54108 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:12:43] ::1:54108 - "GET /api/v2/pre-flight-checks HTTP/1.1" 200
+[33mWARNING[0m:  [20-02-2025 12:12:43] Add of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 12:12:43] Insert of existing embedding ID: 0
+[32mINFO[0m:     [20-02-2025 12:12:43] ::1:54108 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/add HTTP/1.1" 201
+[32mINFO[0m:     [20-02-2025 12:13:04] ::1:54218 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:19:26] ::1:56760 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:19:26] ::1:56761 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:19:26] ::1:56761 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:19:26] ::1:56763 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:19:26] ::1:56764 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:19:26] ::1:56764 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 12:19:33] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 12:19:33] ::1:56821 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 12:19:41] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 12:19:41] ::1:56870 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:19:44] ::1:56870 - "GET /api/v2/pre-flight-checks HTTP/1.1" 200
+[33mWARNING[0m:  [20-02-2025 12:19:44] Add of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 12:19:44] Insert of existing embedding ID: 0
+[32mINFO[0m:     [20-02-2025 12:19:44] ::1:56870 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/add HTTP/1.1" 201
+[33mWARNING[0m:  [20-02-2025 12:19:51] Add of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 12:19:51] Insert of existing embedding ID: 0
+[32mINFO[0m:     [20-02-2025 12:19:51] ::1:56969 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/add HTTP/1.1" 201
+[32mINFO[0m:     [20-02-2025 12:20:04] ::1:57082 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:22:41] ::1:58685 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:22:41] ::1:58686 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:22:41] ::1:58686 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:22:41] ::1:58687 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:22:41] ::1:58688 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:22:41] ::1:58688 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 12:22:48] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 12:22:48] ::1:58763 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 12:22:52] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 12:22:52] ::1:58763 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:22:58] ::1:58870 - "GET /api/v2/pre-flight-checks HTTP/1.1" 200
+[33mWARNING[0m:  [20-02-2025 12:22:58] Add of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 12:22:58] Insert of existing embedding ID: 0
+[32mINFO[0m:     [20-02-2025 12:22:58] ::1:58870 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/add HTTP/1.1" 201
+[33mWARNING[0m:  [20-02-2025 12:23:02] Add of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 12:23:02] Insert of existing embedding ID: 0
+[32mINFO[0m:     [20-02-2025 12:23:02] ::1:58870 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/add HTTP/1.1" 201
+[32mINFO[0m:     [20-02-2025 12:23:08] ::1:58957 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:24:57] ::1:60222 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:24:57] ::1:60223 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:24:57] ::1:60223 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:24:57] ::1:60224 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:24:57] ::1:60225 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:24:57] ::1:60225 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 12:25:07] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 12:25:07] ::1:60321 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:25:18] ::1:60449 - "GET /api/v2/pre-flight-checks HTTP/1.1" 200
+[33mWARNING[0m:  [20-02-2025 12:25:18] Add of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 12:25:18] Insert of existing embedding ID: 0
+[32mINFO[0m:     [20-02-2025 12:25:18] ::1:60449 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/add HTTP/1.1" 201
+[32mINFO[0m:     [20-02-2025 12:25:25] ::1:60556 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:25:53] ::1:60838 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[36mDEBUG[0m:    [20-02-2025 12:26:51] Collection ops_docs already exists, returning existing collection.
+[32mINFO[0m:     [20-02-2025 12:26:51] ::1:61422 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[33mWARNING[0m:  [20-02-2025 12:26:59] Add of existing embedding ID: 0
+[33mWARNING[0m:  [20-02-2025 12:26:59] Insert of existing embedding ID: 0
+[32mINFO[0m:     [20-02-2025 12:26:59] ::1:61499 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/add HTTP/1.1" 201
+[32mINFO[0m:     [20-02-2025 12:27:10] ::1:61587 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:27:23] ::1:61764 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:28:37] ::1:62497 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:28:38] ::1:62497 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/8de3389b-6fb3-499e-ba80-4d628fca11c5/query HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:29:08] ::1:62803 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:29:08] ::1:62804 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:29:08] ::1:62804 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:29:08] ::1:62805 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:29:08] ::1:62806 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:29:08] ::1:62806 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:30:07] ::1:63487 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:30:07] ::1:63488 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:30:07] ::1:63488 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:30:07] ::1:63489 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:30:07] ::1:63490 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:30:07] ::1:63490 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:31:24] ::1:64314 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:31:24] ::1:64315 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:31:24] ::1:64315 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:31:24] ::1:64317 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:31:24] ::1:64318 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-02-2025 12:31:24] ::1:64318 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
