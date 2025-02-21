@@ -1,0 +1,17 @@
+wiki:
+  domain: "https://wiki.eniot.io/"
+  username: ""
+  password: ""
+
+vector_db:
+  persist_directory: "/Users/zhangyue/Documents/code/AI"
+  chunk_size: 150
+  overlap: 50
+
+app:
+  host: "0.0.0.0"
+  port: 8080
+  debug: True
+
+siliconflow:
+  api_key: ""

@@ -36,21 +36,23 @@ class WikiDataFetcher:
         
     def fetch_page_and_children(self, page_id: str) -> List[Dict]:
         """Fetch a page and its children from the wiki."""
-        try:
-            # Fetch the main page
-            main_page = self._fetch_page(page_id)
-            if not main_page:
-                logger.error("Failed to fetch main page.")
-                return []
-            
-            # Fetch child pages
-            child_pages = self._fetch_child_pages(page_id)
-            
-            # Combine main page and child pages
-            return [main_page] + child_pages
-        except Exception as e:
-            logger.error(f"Error fetching page and children: {str(e)}")
-            return []
+        documents = []
+        
+        # Fetch the main page
+        main_page = self._fetch_page(page_id)
+        if main_page:
+            documents.append(main_page)
+        else:
+            logger.warning(f"Main page {page_id} is empty or failed to fetch, but continuing to fetch child pages.")
+        
+        # Fetch child pages
+        child_pages = self._fetch_child_pages(page_id)
+        if child_pages:
+            documents.extend(child_pages)
+        else:
+            logger.warning(f"No child pages found for page {page_id}.")
+        
+        return documents
         
     def _fetch_page(self, page_id: str) -> Dict:
         """Fetch a single page from the wiki."""

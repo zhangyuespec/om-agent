@@ -1,57 +1,108 @@
-# om-agent
-## 项目介绍
+# OM-Agent 运维知识库助手
 
-OM-Agent 是一个基于 Flask 的智能代理系统，集成了 ChromaDB 向量数据库和 BeautifulSoup 网页解析功能。该项目主要用于处理知识库的存储、检索和分析任务，通过 RESTful API 提供数据服务。
+## 🚀 技术栈
 
-主要功能包括：
-- 知识库数据存储与检索
-- 网页内容解析与处理
-- 向量化数据管理
-- 基于配置的灵活部署
+- **核心框架**: 
+  [Flask](https://flask.palletsprojects.com/) - 轻量级Web框架
+- **向量数据库**: 
+  [ChromaDB](https://www.trychroma.com/) - 开源向量数据库
+- **网页解析**: 
+  [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) - HTML/XML解析库
+- **AI服务**: 
+  [SiliconFlow API](https://www.siliconflow.cn/) - 大模型API服务
+- **配置管理**: 
+  [PyYAML](https://pyyaml.org/) - YAML配置文件处理
 
-## 使用方法
+## 📦 安装指南
 
-1. 启动服务：
+### Conda 环境安装
+
+```bash
+# 创建conda环境
+conda create -n om-agent python=3.9
+conda activate om-agent
+
+# 安装依赖
+pip install -r requirements.txt
+
+# 配置环境
+cp config/config.example.yaml config/config.yaml
+nano config/config.yaml  # 按需修改配置
+```
+
+### 常规安装
+
+```bash
+git clone https://github.com/your-repo/om-agent.git
+cd om-agent
+python -m venv venv
+source venv/bin/activate  # Windows使用 venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+## ⚙️ 配置说明
+
+1. **配置文件**:
+   - 使用 `config/config.example.yaml` 作为模板
+   - 复制并重命名为 `config/config.yaml`
    ```bash
-   ./run.sh
+   cp config/config.example.yaml config/config.yaml
    ```
+   - 需要配置的关键参数：
+     - `wiki`: 企业Wiki认证信息
+     - `siliconflow.api_key`: AI服务API密钥
+     - `vector_db.persist_directory`: 向量数据库存储路径
 
-2. 访问 API：
-   - 服务默认运行在 `http://localhost:8080`
-   - 可通过配置文件 `config/config.yaml` 修改主机和端口
+2. **敏感信息**:
+   - 请勿将 `config.yaml` 提交到版本控制
+   - 已通过 `.gitignore` 自动排除
 
-3. 配置管理：
-   - 所有配置项均在 `config/config.yaml` 中管理
-   - 包括数据库路径、API 密钥等敏感信息
+## 🏃 快速启动
 
-## 安装步骤
+```bash
+# 启动服务
+./run.sh
 
-1. 克隆项目：
-   ```bash
-   git clone https://github.com/your-repo/om-agent.git
-   cd om-agent
-   ```
+# 或手动启动
+flask run --host 0.0.0.0 --port 8080
+```
 
-2. 安装依赖：
-   ```bash
-   pip install -r requirements.txt
-   ```
+### API 使用示例
 
-3. 配置环境：
-   - 复制 `.env.example` 为 `.env` 并填写必要信息
-   - 修改 `config/config.yaml` 中的配置项
+```bash
+# 初始化知识库 (POST)
+curl -X POST http://localhost:8080/init \
+  -H "Content-Type: application/json" \
+  -d '{"page_id": "74780551"}'
 
-4. 初始化数据库：
-   ```bash
-   python init_db.py
-   ```
+# 提问示例 (GET)
+curl "http://localhost:8080/query?question=如何重启生产服务器？"
+```
 
-5. 启动服务：
-   ```bash
-   ./run.sh
-   ```
+## 🌟 功能特性
 
-## 注意事项
-- 确保 Python 版本 >= 3.8
-- 首次运行前需要初始化数据库
-- 生产环境建议关闭调试模式
+- 支持增量式知识库更新
+- 流式问答接口
+- 自动重试机制（网络请求）
+- 内容安全过滤
+- 多格式文档支持（HTML/Text）
+
+## 🔧 测试验证
+
+```bash
+# 运行单元测试
+pytest tests/
+
+# 检查服务状态
+curl http://localhost:8080
+```
+
+## 📌 注意事项
+
+- 推荐 Python 3.9+ 环境
+- 首次使用需先执行知识库初始化
+- 生产环境设置 `app.debug: false`
+- Wiki页面需开启API访问权限
+
+## 📄 许可证
+MIT License
