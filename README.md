@@ -15,28 +15,30 @@
 
 ## 📦 安装指南
 
-### Conda 环境安装
+### Conda 环境安装 (推荐)
 
 ```bash
-# 创建conda环境
-conda create -n om-agent python=3.9
+# 使用 environment.yml 创建环境
+conda env create -f environment.yml
+
+# 激活环境
 conda activate om-agent
 
-# 安装依赖
-pip install -r requirements.txt
-
-# 配置环境
+# 配置应用设置 (复制并修改配置文件)
 cp config/config.example.yaml config/config.yaml
-nano config/config.yaml  # 按需修改配置
+nano config/config.yaml  # 按需修改以下参数：
+                        # - wiki 认证信息
+                        # - SiliconFlow API 密钥
+                        # - 向量数据库存储路径
 ```
 
-### 常规安装
+### 常规安装 (Pip)
 
 ```bash
 git clone https://github.com/your-repo/om-agent.git
 cd om-agent
 python -m venv venv
-source venv/bin/activate  # Windows使用 venv\Scripts\activate
+source venv/bin/activate  # Windows 使用 venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
